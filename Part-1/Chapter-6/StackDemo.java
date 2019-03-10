@@ -28,33 +28,23 @@ class Stack{
 		}
 	}
 
-	//Show existing item in the stack
-	void show(){
-		for(int i = 0;i<=tos;i++){
-			System.out.print(stck[i] + " ");
-		}
-	}
+	
 }
 
 class StackDemo{
 	public static void main(String args[]){
 		Stack stk1 = new Stack();
-		//push item and show item
+		//push item
 		for(int i = 0;i<=10;i++){
 			stk1.push(i);
 			
 		}
 
-		stk1.show();
-		System.out.println();
-
-		
 		//pop item and show item
 		for(int i = 0;i<=10;i++){
-			stk1.pop();
+			System.out.println(stk1.pop());
 			
 		}
-		stk1.show();
 
 
 
